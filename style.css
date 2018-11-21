@@ -1,0 +1,21 @@
+body {
+	background-image: url(images/fond.jpg);
+	background-size: cover;
+}
+
+@font-face {
+    font-family: 'sf pro'; /*a name to be used later*/
+    font-weight: 200;
+    src: url('font/SF Pro/SF-Pro-Display-Thin.otf'); /*URL to font*/
+}
+
+a {
+	color: white;
+	font-family: 'sf pro';
+	font-weight: 150;
+}
+
+.my-navbar {
+	color: black;
+}
+
