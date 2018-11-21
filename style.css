@@ -19,3 +19,22 @@ a {
 	color: black;
 }
 
+p {
+	margin: auto;
+	text-align: center;
+}
+h1 {
+	text-align: center;
+}
+.my-card {
+	height: 60vh;
+}
+.streamer-image {
+	height: 50%;
+	object-fit: cover;
+}
+
+.my-jumbotron {
+	/*height: 5vh;*/
+	padding: 1rem 1rem;
+}
