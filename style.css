@@ -5,14 +5,14 @@ body {
 
 @font-face {
     font-family: 'sf pro'; /*a name to be used later*/
-    font-weight: 200;
-    src: url('font/SF Pro/SF-Pro-Display-Thin.otf'); /*URL to font*/
+    font-weight: 400;
+    src: url('font/SF Pro/SF-Pro-Display-Ultralight.otf'); /*URL to font*/
 }
 
 a {
-	color: white;
+	color: black;
 	font-family: 'sf pro';
-	font-weight: 150;
+	font-weight: 400;`
 }
 
 .my-navbar {
@@ -21,20 +21,36 @@ a {
 
 p {
 	margin: auto;
-	text-align: center;
+	text-align: left;
 }
 h1 {
 	text-align: center;
+	font-size: 3em;
 }
+
+#titre {
+	text-align: center;
+	font-size: 1.5em;
+}
+
 .my-card {
 	height: 60vh;
 }
+
 .streamer-image {
-	height: 50%;
+	height: 40%;
 	object-fit: cover;
 }
 
 .my-jumbotron {
 	/*height: 5vh;*/
 	padding: 1rem 1rem;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
