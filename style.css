@@ -1,13 +1,14 @@
 body {
-	background-image: url(images/fond.jpg);
+	color: rgba(20, 80, 80, 0.3); ;
 	background-size: cover;
 }
 
 @font-face {
     font-family: 'sf pro'; /*a name to be used later*/
-    font-weight: 400;
-    src: url('font/SF Pro/SF-Pro-Display-Ultralight.otf'); /*URL to font*/
-}
+
+    font-weight: 200;
+    src: url('font/SF Pro/SF-Pro-Display-Thin.otf'); /*URL to font*/
+} 
 
 a {
 	color: black;
@@ -19,6 +20,16 @@ a {
 	color: grey;
 }
 
+.my-banner {
+	background-image: url('images/fond.jpg');
+	background-size: cover;
+	font-family: 'sf pro';
+	font-weight: 250;
+	text-align: center;
+	padding: 1rem 1rem;
+	color: rgb(242, 242, 242);
+}
+
 p {
 	margin: auto;
 	text-align: left;
@@ -26,6 +37,23 @@ p {
 h1 {
 	text-align: center;
 	font-size: 3em;
+	color: black;
+}
+
+h2 {
+	color: black;
+	font-family: 'sf pro';
+	
+}
+
+#titre3 {
+	padding-top: 2rem;
+	/*margin-left: 15%;*/
+}
+
+h5 {
+	color: grey;
+	font-family: 'sf pro';
 }
 
 #titre {
@@ -42,9 +70,25 @@ h1 {
 	object-fit: cover;
 }
 
+.streamer-image2 {
+	min-height: 60%;
+	max-height: 60%;
+	object-fit: cover;
+}
+
 .my-jumbotron {
 	/*height: 5vh;*/
 	padding: 1rem 1rem;
+}
+
+/*#premierlien {
+	font-size: 10px;
+}*/
+
+.my-navlink {
+	color: rgb(242, 242, 242);
+	font-family: 'sf pro';
+	font-weight: 250;
 }
 
 .carousel-control-prev-icon {
@@ -53,4 +97,50 @@ h1 {
 
 .carousel-control-next-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+/*.my-banner {
+	font-family: 'sf pro';
+	font-weight: 250;
+	text-align: center;
+	padding: 4rem 4rem;
+	color: rgb(242, 242, 242);
+}*/
+
+.my-a {
+	/*padding: 2rem 2rem;*/
+}
+
+#gaming {
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+#cinema {
+	margin-top: 50px;
+}
+
+#art {
+	margin-top: 50px;
+}
+.profil-gamer {
+	height: 50vh;
+	background-color: rgb(64,64,64);
+	margin-bottom: 20px;
+	text-align: center;
+}
+#beauty {
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+.profile-beauty {
+	height: 50vh;
+	background-color: rgb(64,64,64);
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+#logo-social-network {
+	height: 5vh;
+	border-radius: 20%;
 }

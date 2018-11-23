@@ -2,46 +2,56 @@
 <html>
 	<head>
 		<title>
-			Nom du projet
+			Stream-Art
 		</title>
-		<link rel="shortcut icon" type="image/x-icon" href="images/logo.jpg" />
+		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
 
 
-		<nav class="my-navbar navbar navbar-expand-lg navbar-dark bg-dark">
-	  	<a class="navbar-brand" href="#">Nom du projet</a>
-	  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  	</button>
-	  		<div class="collapse navbar-collapse" id="navbarNav">
-	    		<ul class="navbar-nav">
-		      		<li class="nav-item active">
-		        		<a class="nav-link" href="#">Trouve ton streamer<span class="sr-only">(current)</span></a>
-		      		</li>
-		      		<li class="nav-item dropdown">
-		        		<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Catégories</a>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		  <!-- Image and text -->
+		  <nav class="navbar navbar-dark bg-dark">
+		    <a class="navbar-brand" href="#">
+		      <img src="images/play.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+		    
+		    </a>
+		  </nav>
 
-		        		
-					    <div class="dropdown-menu">
-					      <a class="dropdown-item" href="#">Gaming</a>
-					      <a class="dropdown-item" href="#">Cuisine</a>
-					      <a class="dropdown-item" href="#">Beauté</a>
-					      <a class="dropdown-item" href="#">Tutos</a>
-					    </div>
-		      		</li>
-				      <li class="nav-item active">
-				        <a class="nav-link" href="#">A la une<span class="sr-only">(current)</span></a>
-				      </li>
-
-				      <form class="form-inline my-2 my-lg-0">
-				            <input class="form-control mr-sm-2" type="..." placeholder="..." aria-label="...">
-				            <button class="btn btn-light my-2 my-sm-0" type="submit">Rechercher</button>
-				          </form>
-			    </ul>
-			  </div>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item">
+		        <a class="nav-link my-navlink" href="#">Trouve un streamer <span class="sr-only">(current)</span></a>
+		      </li>
+		
+		      <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle my-navlink" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catégorie
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="#beauty">Beauté</a>
+		          <a class="dropdown-item" href="#gaming">Gaming</a>
+		          <a class="dropdown-item" href="#cinema">Cinéma</a>
+		          <a class="dropdown-item" href="#art">Art</a>
+		          <!-- <a class="dropdown-item" href="cuisine">Cuisine</a>
+		          <a class="dropdown-item" href="#">Podcast</a>
+		          <a class="dropdown-item" href="#">Tutos</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="#">Chatting</a> -->
+		        </div>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link my-navlink" target="_blank" href="https://mathieu132.typeform.com/to/HtoNQ6">Inscription</a>
+		      </li>
+		      
+		    </ul>
+		    <form class="form-inline my-2 my-lg-0">
+		      <input class="form-control mr-sm-2" type="search" placeholder="Rechercher" aria-label="Search">
+		      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Go!</button>
+		    </form>
+		  </div>
 		</nav>
 
 		<!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -70,13 +80,21 @@
 		        <span class="sr-only">Next</span>
 		      </a>
 		    </div> -->
-
-		<div class="jumbotron jumbotron-fluid my-jumbotron">
+		
+		<div class="banner my-banner">
 		  <div class="container">
-		    <h1 class="display-4">STREAM-ME</h1>
-		    <p id="titre" class="lead">La plateforme de référencement des streamers !</p>
+		    <h1>Stream-Art</h1>
+		    <h2>La plateforme de référencement des streamers !</h2>
+		    <a class="typeform-share button" href="https://mathieu132.typeform.com/to/HtoNQ6" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#0C6CD8;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:26px;line-height:65px;text-align:center;margin:2rem 0 0 0;height:65px;padding:0px 43px;border-radius:32px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" target="_blank">Inscris-toi ! </a> 
+		    <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })()
+		     </script>
 		  </div>
 		</div>
+		<div class="container">
+				<h2 id="titre3">À la une</h2>
+			
+		</div>
+		
 
 		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 		  <ol class="carousel-indicators">
@@ -87,15 +105,17 @@
 		  <div class="carousel-inner">
 		    <div class="carousel-item active">
 
+
 		      <div class="container-fluid">
 		        <div class="row justify-content-center">
 		          <div class="col-3">
 		            <div class="card my-card" >
 		              <img class="card-img-top streamer-image" src="images/faker.jpg" alt="Faker">
-		              <div class="card-body">
+		              <div class="card-body my-card">
 		                <h5 class="card-title">Faker</h5>
 		                <p class="card-text">Joueur professionnel de League of Legends, Faker fait partie de l'équipe SKT.</p>
-		                <a href="https://www.twitch.tv/faker" target="_blank" class="btn btn-light">Twitch</a>
+		                <a href="https://www.twitch.tv/faker" target="_blank" class="btn btn-light my-a"><i class="fab fa-twitch"></i> Twitch</a>
+		                <a href="https://www.youtube.com/channel/UCpJw2H9KKqwCCGQKRh1Bf2w" target="_blank" class="btn btn-light my-a"><i class="fab fa-youtube"></i> Youtube</a>
 		              </div>
 		            </div>
 		          </div>
@@ -104,8 +124,9 @@
 		              <img class="card-img-top streamer-image" src="images/gotaga.png" alt="Faker">
 		              <div class="card-body">
 		                <h5 class="card-title">Gotaga</h5>
-		                <p class="card-text">Joueur professionnel de League of Legends, Faker fait partie de l'équipe SKT.</p>
-		                <a href="https://www.twitch.tv/gotaga" target="_blank" class="btn btn-light">Twitch</a>
+		                <p class="card-text">Joueur et stremer français, Gotaga est connu sur Call of Duty, et fait partie de la team Vitality.</p>
+		                <a href="https://www.twitch.tv/gotaga" target="_blank" class="btn btn-light my-a"><i class="fab fa-twitch"></i> Twitch</a>
+		                <a href="ttps://www.youtube.com/channel/UCCFqUJYKT97UerMmb6DM0bw" target="_blank" class="btn btn-light my-a"><i class="fab fa-youtube"></i> Youtube</a>
 		              </div>
 		            </div>
 		          </div>
@@ -115,7 +136,8 @@
 		              <div class="card-body">
 		                <h5 class="card-title">Ninja</h5>
 		                <p class="card-text">Nouvel acteur majeur dans le streaming, Ninja est vite devenu connu à travers ses streams sur Fortnite.</p>
-		                <a href="https://www.twitch.tv/ninja" target="_blank" class="btn btn-light">Twitch</a>
+		                <a href="https://www.twitch.tv/ninja" target="_blank" class="btn btn-light"><i class="fab fa-twitch"></i> Twitch</a>
+		                <a href="https://www.youtube.com/user/NinjasHyper" target="_blank" class="btn btn-light my-a"><i class="fab fa-youtube"></i> Youtube</a>
 		              </div>
 		            </div>
 		          </div>
@@ -132,7 +154,8 @@
 		              <div class="card-body">
 		                <h5 class="card-title">Domingo</h5>
 		                <p class="card-text">Streamer français, Domingo joue généralement à League of Legends et Fortnite.</p>
-		                <a href="https://www.twitch.tv/domingo" target="_blank" class="btn btn-light">Twitch</a>
+		                <a href="https://www.twitch.tv/domingo" target="_blank" class="btn btn-light"><i class="fab fa-twitch"></i> Twitch</a>
+		                <a href="https://www.youtube.com/user/ElDom1nG0" target="_blank" class="btn btn-light my-a"><i class="fab fa-youtube"></i> Youtube</a>
 		              </div>
 		            </div>
 		          </div>
@@ -141,8 +164,9 @@
 		              <img class="card-img-top streamer-image" src="images/mistermv.jpg" alt="Faker">
 		              <div class="card-body">
 		                <h5 class="card-title">Mistermv</h5>
-		                <p class="card-text">Joueur professionnel de League of Legends, Faker fait partie de l'équipe SKT.</p>
-		                <a href="https://www.twitch.tv/mistermv" target="_blank" class="btn btn-light">Twitch</a>
+		                <p class="card-text">En plus d'être streamer, mistermv est producteur de musique et compositeur.</p>
+		                <a href="https://www.twitch.tv/mistermv" target="_blank" class="btn btn-light"><i class="fab fa-twitch"></i> Twitch</a>
+		                <a href="https://www.youtube.com/user/monsieurmv" target="_blank" class="btn btn-light my-a"><i class="fab fa-youtube"></i> Youtube</a>
 		              </div>
 		            </div>
 		          </div>
@@ -151,8 +175,9 @@
 		              <img class="card-img-top streamer-image" src="images/sardoche.jpg" alt="Faker">
 		              <div class="card-body">
 		                <h5 class="card-title">Sardoche</h5>
-		                <p class="card-text">Nouvel acteur majeur dans le streaming, Ninja est vite devenu connu à travers ses streams sur Fortnite.</p>
-		                <a href="https://www.twitch.tv/sardoche" target="_blank" class="btn btn-light">Twitch</a>
+		                <p class="card-text">Streamer sur League of Legends, Sardoche est passé sur Battlerite depuis peu.</p>
+		                <a href="https://www.twitch.tv/sardoche" target="_blank" class="btn btn-light"><i class="fab fa-twitch"></i> Twitch</a>
+		                <a href="https://www.youtube.com/user/SardocheLol" target="_blank" class="btn btn-light my-a"><i class="fab fa-youtube"></i> Youtube</a>
 		              </div>
 		            </div>
 		          </div>
@@ -168,8 +193,9 @@
 		              <img class="card-img-top streamer-image" src="images/trinity.jpg" alt="Faker">
 		              <div class="card-body">
 		                <h5 class="card-title">Trinity</h5>
-		                <p class="card-text">Joueur professionnel de League of Legends, Faker fait partie de l'équipe SKT.</p>
-		                <a href="https://www.twitch.tv/trinity" target="_blank" class="btn btn-light">Twitch</a>
+		                <p class="card-text">Streameuse gaming professionnelle, Trinity anime également l'émission <i>Art of gaming</i> sur Arte.</p>
+		                <a href="https://www.twitch.tv/trinity" target="_blank" class="btn btn-light"><i class="fab fa-twitch"></i> Twitch</a>
+		                <a href="https://www.youtube.com/channel/UCcd54QF3QSMSn9fW10541YQ" target="_blank" class="btn btn-light my-a"><i class="fab fa-youtube"></i> Youtube</a>
 		              </div>
 		            </div>
 		          </div>
@@ -178,18 +204,20 @@
 		              <img class="card-img-top streamer-image" src="images/maghla.jpg" alt="Faker">
 		              <div class="card-body">
 		                <h5 class="card-title">Maghla</h5>
-		                <p class="card-text">Joueur professionnel de League of Legends, Faker fait partie de l'équipe SKT.</p>
-		                <a href="https://www.twitch.tv/maghla" target="_blank" class="btn btn-light">Twitch</a>
+		                <p class="card-text">Également française, Maghla est une streameuse indépendante multi-gaming.</p>
+		                <a href="https://www.twitch.tv/maghla" target="_blank" class="btn btn-light"><i class="fab fa-twitch"></i> Twitch</a>
+		                <a href="https://www.youtube.com/channel/UChzNfUfgk7sQ5VOdy2r1Jow" target="_blank" class="btn btn-light my-a"><i class="fab fa-youtube"></i> Youtube</a>
 		              </div>
 		            </div>
 		          </div>
 		          <div class="col-3">
 		            <div class="card my-card">
-		              <img class="card-img-top streamer-image" src="images/ninja.jpg" alt="Faker">
+		              <img class="card-img-top streamer-image" src="images/nahomay.jpg" alt="Faker">
 		              <div class="card-body">
-		                <h5 class="card-title">Ninja</h5>
-		                <p class="card-text">Nouvel acteur majeur dans le streaming, Ninja est vite devenu connu à travers ses streams sur Fortnite.</p>
-		                <a href="https://www.twitch.tv/ninja" target="_blank" class="btn btn-light">Twitch</a>
+		                <h5 class="card-title">Nahomay</h5>
+		                <p class="card-text">Dans un autre domaine, Nahomay est une streameuse tous domaines. Sa programmation est mise à jour chaque semaine.</p>
+		                <a href="https://www.twitch.tv/nahomay" target="_blank" class="btn btn-light"><i class="fab fa-twitch"></i> Twitch</a>
+		                <a href="https://www.youtube.com/channel/UCBsaSgE09aupIjjui5kWnGQ" target="_blank" class="btn btn-light my-a"><i class="fab fa-youtube"></i> Youtube</a>
 		              </div>
 		            </div>
 		          </div>
@@ -208,7 +236,341 @@
 		  </a>
 		</div>
 
-		
+		<!-- Image and text -->
+		<div id="beauty" class="container">
+			<h2 "beauty">Beauté</h2>
+			<div class="row justify-content-right">
+				<div class="col-3">
+					<div class="profile-beauty card my-card" >
+						<img class="card-img-top streamer-image2" src="images/ruth-crilly.jpeg" alt="Faker">
+						<div class="card-body">
+							<h5 class="card-title">Ruth Crilly</h5>
+							<a href="https://twitter.com/ruthcrilly" target="_blank"> <img id="logo-social-network" src="images/logo-twitter.jpg "></a>
+							<a href="https://www.youtube.com/user/AModelRecommends/featured" target="_blank">
+							<img id="logo-social-network" src="images/logo-youtube.png"></a> 
+						</div>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="profile-beauty card my-card" >
+						<img class="card-img-top streamer-image2" src="images/chloe-morello.jpeg" alt="Faker">
+						<div class="card-body">
+							<h5 class="card-title">Chloe Morello</h5>
+							<a href="https://twitter.com/chloemorello" target="_blank"> 
+								<img id="logo-social-network" src="images/logo-twitter.jpg"></a>
+							<a href="https://www.youtube.com/user/ChloeMorello?hl=fr" target="_blank">
+							<img id="logo-social-network" src="images/logo-youtube.png"></a> 
+						</div>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="profile-beauty card my-card" >
+						<img class="card-img-top streamer-image2" src="images/coline.jpg" alt="Faker">
+						<div class="card-body">
+							<h5 class="card-title">Coline</h5>
+							<a href="https://twitter.com/colineh" target="_blank"> <img id="logo-social-network" src="images/logo-twitter.jpg "></a>
+							<a href="hhttps://www.youtube.com/channel/UCquqN40UXDd5SqRBR1ovDew" target="_blank">
+							<img id="logo-social-network" src="images/logo-youtube.png"></a> 
+						</div>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="profile-beauty card my-card" >
+						<img class="card-img-top streamer-image2" src="images/lauren-curtis.jpg" alt="Faker">
+						<div class="card-body">
+							<h5 class="card-title">Lauren Curtis</h5>
+							<a href="https://twitter.com/lozcurtis" target="_blank"> <img id="logo-social-network" src="images/logo-twitter.jpg "></a>
+							<a href="https://www.youtube.com/channel/UCXbQzhqSvgVZTUyi1T4AU3w" target="_blank">
+							<img id="logo-social-network" src="images/logo-youtube.png"></a> 
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div id="gaming" class="container">
+			<h2 "Gaming">Gaming</h2>
+			<div class="row justify-content-right">
+				<div class="col-3">
+					<div class="profil-gamer card my-card" >
+						<img class="card-img-top streamer-image2" src="images/maghla.jpg" alt="Faker">
+						<div class="card-body">
+							<h5 class="card-title">Maghla</h5>
+							<a href="https://twitter.com/maghla" target="_blank">
+								<img id="logo-social-network" src="images/logo-twitter.jpg " ></a>
+								<a href="https://www.youtube.com/channel/UChzNfUfgk7sQ5VOdy2r1Jow" target="_blank">
+									<img id="logo-social-network" src="images/logo-youtube.png "></a>
+									<a href="https://www.twitch.tv/maghla" target="_blank">
+										<img id="logo-social-network" src="images/twitch-logo.png "></a>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="profil-gamer card my-card" >
+						<img class="card-img-top streamer-image2" src="images/domingo.jpg" alt="Faker">
+						<div class="card-body">
+							<h5 class="card-title">Domingo</h5>
+							<a href="https://twitter.com/domingo" target="_blank">
+								<img id="logo-social-network" src="images/logo-twitter.jpg " ></a>
+								<a href="https://www.youtube.com/channel/UCRCMNm2I4tM4BTmNSboc4QA" target="_blank">
+									<img id="logo-social-network" src="images/logo-youtube.png "></a>
+									<a href="https://www.twitch.tv/domingo" target="_blank">
+										<img id="logo-social-network" src="images/twitch-logo.png "></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="profil-gamer card my-card" >
+						<img class="card-img-top streamer-image2" src="images/gotaga.jpg" alt="Faker">
+						<div class="card-body">
+							<h5 class="card-title">Gotaga</h5>
+							<a href="https://twitter.com/gotaga" target="_blank">
+								<img id="logo-social-network" src="images/logo-twitter.jpg " ></a>
+								<a href="https://www.youtube.com/channel/UCCFqUJYKT97UerMmb6DM0bw" target="_blank">
+									<img id="logo-social-network" src="images/logo-youtube.png "></a>
+									<a href="https://www.twitch.tv/gotaga" target="_blank">
+										<img id="logo-social-network" src="images/twitch-logo.png "></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="profil-gamer card my-card" >
+						<img class="card-img-top streamer-image2" src="images/trinity.jpg" alt="Faker">
+						<div class="card-body">
+							<h5 class="card-title">Trinity</h5>
+							<a href="https://twitter.com/mythixtrinity" target="_blank">
+								<img id="logo-social-network" src="images/logo-twitter.jpg " ></a>
+								<a href="https://www.youtube.com/channel/UCcd54QF3QSMSn9fW10541YQ" target="_blank">
+									<img id="logo-social-network" src="images/logo-youtube.png "></a>
+									<a href="https://www.twitch.tv/mythixtrinity" target="_blank">
+										<img id="logo-social-network" src="images/twitch-logo.png "></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="profil-gamer card my-card" >
+						<img class="card-img-top streamer-image2" src="images/sardoche.jpg" alt="Faker">
+						<div class="card-body">
+							<h5 class="card-title">Sardoche</h5>
+							<a href="https://twitter.com/sardoche_lol" target="_blank">
+								<img id="logo-social-network" src="images/logo-twitter.jpg " ></a>
+								<a href="https://www.youtube.com/channel/UCVMOlyQ_54cbymF_6nrGxPw" target="_blank">
+									<img id="logo-social-network" src="images/logo-youtube.png "></a>
+									<a href="https://www.twitch.tv/sardoche" target="_blank">
+										<img id="logo-social-network" src="images/twitch-logo.png "></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="profil-gamer card my-card" >
+						<img class="card-img-top streamer-image2" src="images/faker.jpg" alt="Faker">
+						<div class="card-body">
+							<h5 class="card-title">Faker</h5>
+							<a href="https://twitter.com/sktelecomfaker" target="_blank">
+								<img id="logo-social-network" src="images/logo-twitter.jpg " ></a>
+								<a href="https://www.youtube.com/channel/UCpJw2H9KKqwCCGQKRh1Bf2w" target="_blank">
+									<img id="logo-social-network" src="images/logo-youtube.png "></a>
+									<a href="https://www.twitch.tv/faker" target="_blank">
+										<img id="logo-social-network" src="images/twitch-logo.png "></a>
+								
+						</div>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="profil-gamer card my-card" >
+						<img class="card-img-top streamer-image2" src="images/mistermv.jpg" alt="Faker">
+						<div class="card-body">
+							<h5 class="card-title">Mistermv</h5>
+							<a href="https://twitter.com/mvcaster" target="_blank">
+								<img id="logo-social-network" src="images/logo-twitter.jpg " ></a>
+								<a href="https://www.youtube.com/channel/UCus9EeXDcLaCJhVXYd6PJcg" target="_blank">
+									<img id="logo-social-network" src="images/logo-youtube.png "></a>
+									<a href="https://www.twitch.tv/mistermv" target="_blank">
+										<img id="logo-social-network" src="images/twitch-logo.png "></a>
+										
+									</div>
+								</div>
+							</div>
+					<div class="col-3">
+						<div class="profil-gamer card my-card" >
+							<img class="card-img-top streamer-image2" src="images/nahomay.jpg" alt="Faker">
+							<div class="card-body">
+								<h5 class="card-title">Nahomay</h5>
+								<a href="https://twitter.com/nahomay" target="_blank">
+									<img id="logo-social-network" src="images/logo-twitter.jpg "></a>
+									<a href="https://www.youtube.com/channel/UCBsaSgE09aupIjjui5kWnGQ" target="_blank">
+										<img id="logo-social-network" src="images/logo-youtube.png "></a>
+										<a href="https://www.twitch.tv/nahomay" target="_blank">
+											<img id="logo-social-network" src="images/twitch-logo.png "></a>
+											
+										</div>
+									</div>
+								</div>
+
+						<div class="col-3">
+						<div class="profil-gamer card my-card" >
+							<img class="card-img-top streamer-image2" src="images/ninja.jpg" alt="Faker">
+							<div class="card-body">
+								<h5 class="card-title">Ninja</h5>
+								<a href="https://twitter.com/ninja" target="_blank">
+									<img id="logo-social-network" src="images/logo-twitter.jpg "></a>
+									<a href="https://www.youtube.com/user/NinjasHyper" target="_blank">
+										<img id="logo-social-network" src="images/logo-youtube.png "></a>
+										<a href="https://www.twitch.tv/ninja" target="_blank">
+											<img id="logo-social-network" src="images/twitch-logo.png "></a>
+											
+										</div>
+									</div>
+								</div>
+						<div class="col-3">
+						<div class="profil-gamer card my-card" >
+							<img class="card-img-top streamer-image2" src="images/shroud.jpg" alt="Faker">
+							<div class="card-body">
+								<h5 class="card-title">Shroud</h5>
+								<a href="https://twitter.com/shroud" target="_blank">
+									<img id="logo-social-network" src="images/logo-twitter.jpg "></a>
+									<a href="https://www.youtube.com/channel/UCoz3Kpu5lv-ALhR4h9bDvcw" target="_blank">
+										<img id="logo-social-network" src="images/logo-youtube.png "></a>
+										<a href="https://www.twitch.tv/shroud" target="_blank">
+											<img id="logo-social-network" src="images/twitch-logo.png "></a>
+											
+										</div>
+									</div>
+								</div>
+						<div class="col-3">
+							<div class="profil-gamer card my-card" >
+								<img class="card-img-top streamer-image2" src="images/summit1g.jpg" alt="Faker">
+									<div class="card-body">
+										<h5 class="card-title">Summit1g</h5>
+										<a href="https://twitter.com/summit1g" target="_blank">
+										<img id="logo-social-network" src="images/logo-twitter.jpg "></a>
+										<a href="https://www.youtube.com/user/summit1g" target="_blank">
+										<img id="logo-social-network" src="images/logo-youtube.png "></a>
+										<a href="https://www.twitch.tv/summit1g" target="_blank">
+											<img id="logo-social-network" src="images/twitch-logo.png "></a>
+											
+										</div>
+									</div>
+								</div>
+
+							<div class="col-3">
+								<div class="profil-gamer card my-card" >
+									<img class="card-img-top streamer-image2" src="images/imaqtpie.jpg" alt="Faker">
+										<div class="card-body">
+											<h5 class="card-title">imaqtpie</h5>
+											<a href="https://twitter.com/imaqtpie" target="_blank">
+											<img id="logo-social-network" src="images/logo-twitter.jpg "></a>
+											<a href="https://www.youtube.com/user/killertoast949" target="_blank">
+											<img id="logo-social-network" src="images/logo-youtube.png "></a>
+											<a href="https://www.twitch.tv/imaqtpie" target="_blank">
+												<img id="logo-social-network" src="images/twitch-logo.png "></a>
+												
+											</div>
+										</div>
+									</div>
+						</div>
+
+			<h2  id="cinema">Cinéma</h2>
+			<div class="row justify-content-right">
+				<div class="col-3">
+					<div class="profile-beauty card my-card" >
+						<img class="card-img-top streamer-image2" src="images/fossoyeur.jpg" alt="Faker">
+						<div class="card-body">
+							<h5 class="card-title">Le fossoyeur de film</h5>
+							<a href="https://twitter.com/francoistheurel?lang=fr" target="_blank"> <img id="logo-social-network" src="images/logo-twitter.jpg "></a>
+							<a href="https://www.youtube.com/user/deadwattsofficiel" target="_blank">
+							<img id="logo-social-network" src="images/logo-youtube.png"></a> 
+						</div>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="profile-beauty card my-card" >
+						<img class="card-img-top streamer-image2" src="images/karim.jpg" alt="Faker">
+						<div class="card-body">
+							<h5 class="card-title">Karim Debbache</h5>
+							<a href="https://twitter.com/KarimDebbache?lang=fr" target="_blank"> 
+								<img id="logo-social-network" src="images/logo-twitter.jpg"></a>
+							<a href="https://www.youtube.com/user/KarimDebbache" target="_blank">
+							<img id="logo-social-network" src="images/logo-youtube.png"></a> 
+						</div>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="profile-beauty card my-card" >
+						<img class="card-img-top streamer-image2" src="images/mrmeeea.jpg" alt="Faker">
+						<div class="card-body">
+							<h5 class="card-title">Mr Meeea</h5>
+							<a href="https://twitter.com/MrMeeea?lang=fr"> <img id="logo-social-network" src="images/logo-twitter.jpg "></a>
+							<a href="https://www.youtube.com/user/MrMeeea" target="_blank">
+							<img id="logo-social-network" src="images/logo-youtube.png"></a> 
+						</div>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="profile-beauty card my-card" >
+						<img class="card-img-top streamer-image2" src="images/versus.jpg" alt="Faker">
+						<div class="card-body">
+							<h5 class="card-title">Versus</h5>
+							<a href="https://twitter.com/versus" target="_blank"> <img id="logo-social-network" src="images/logo-twitter.jpg "></a>
+							<a href="https://www.youtube.com/user/loic0adrien" target="_blank">
+							<img id="logo-social-network" src="images/logo-youtube.png"></a> 
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<h2  id="art">Art</h2>
+			<div class="row justify-content-right">
+				<div class="col-3">
+					<div class="profile-beauty card my-card" >
+						<img class="card-img-top streamer-image2" src="images/arcanis.jpg" alt="Faker">
+						<div class="card-body">
+							<h5 class="card-title">Arcanis TV</h5>
+							<a href="https://twitter.com/arcanis_art?lang=fr" target="_blank"> <img id="logo-social-network" src="images/logo-twitter.jpg "></a>
+							<a href="https://www.youtube.com/channel/UCOsUqdUv_hyM0eddn7N7BVw" target="_blank">
+							<img id="logo-social-network" src="images/logo-youtube.png"></a> 
+						</div>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="profile-beauty card my-card" >
+						<img class="card-img-top streamer-image2" src="images/citron.png" alt="Faker">
+						<div class="card-body">
+							<h5 class="card-title">Citron Fringant</h5>
+							<a href="https://twitter.com/ESKGRAPHART" target="_blank"> 
+								<img id="logo-social-network" src="images/logo-twitter.jpg"></a>
+							<a href="https://www.youtube.com/user/KarimDebbache" target="_blank">
+							<img id="logo-social-network" src="images/logo-youtube.png"></a> 
+						</div>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="profile-beauty card my-card" >
+						<img class="card-img-top streamer-image2" src="images/bobross.jpg" alt="Faker">
+						<div class="card-body">
+							<h5 class="card-title">BobRoss</h5>
+							<a href="https://twitter.com/BobRossOfficial"> <img id="logo-social-network" src="images/logo-twitter.jpg "></a>
+							<a href="https://www.youtube.com/user/BobRossInc" target="_blank">
+							<img id="logo-social-network" src="images/logo-youtube.png"></a> 
+						</div>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="profile-beauty card my-card" >
+						<img class="card-img-top streamer-image2" src="images/deadmau5.jpg" alt="Faker">
+						<div class="card-body">
+							<h5 class="card-title">Deadmau5</h5>
+							<a href="https://twitter.com/deadmau5"> <img id="logo-social-network" src="images/logo-twitter.jpg "></a>
+							<a href="https://www.youtube.com/channel/UCYEK6xds6eo-3tr4xRdflmQ" target="_blank">
+							<img id="logo-social-network" src="images/logo-youtube.png"></a> 
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			
 
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
